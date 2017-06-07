@@ -13,6 +13,7 @@ const AppRole = db.define('AppRole', {
       references: 'Group',
       referencesKey: 'Id'
     }
+  },
   {
     timestamps: false,
     freezeTableName: true

@@ -12,6 +12,7 @@ router.post('/', function (req, res) {
     {
         Group.create({ Name: data.Name })
         .then(() => {
+            if()
             res.json({Result: 1});
         });
     }

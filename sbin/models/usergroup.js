@@ -1,8 +1,8 @@
 var Sequelize = require('sequelize');
 var db = require('./index');
 
-var User = require('./User');
-var Group = require('./Group');
+var User = require('./user');
+var Group = require('./group');
 
 const UserGroup = db.define('UserGroup', {
     Id: {type: Sequelize.BIGINT, primaryKey: true, autoIncrement: true},

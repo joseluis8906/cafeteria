@@ -7,7 +7,7 @@ var User = require('../models/user');
 // define the home page route
 router.post('/', function (req, res) {
     var data = (req.body);
-
+    
     if (data.Method === 'Insert')
     {
         User.create({ UserName: data.UserName, Password: Crypt(data.Password)})
